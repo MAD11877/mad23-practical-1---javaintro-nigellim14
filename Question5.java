@@ -27,6 +27,38 @@ public class Question5
      */
      
     Scanner in = new Scanner(System.in);
-    
+    int userinput = in.nextInt(), n;
+
+    int[] values = new int[userinput];
+    int[] check = new int[userinput];
+
+    for (int a = 0; a < userinput; a++) {
+      values[a] = in.nextInt();
+    }
+    {
+      for (int a = 0; a < userinput; a++) {
+        n = 1;
+        if (values[a] == -1) {
+          check[a] = 0;
+        } else {
+          for (int b = a + 1; b < userinput; b++) {
+            if (values[a] == values[b]) {
+              n++;
+              values[b] = -1;
+            }
+          }
+          check[a] = n;
+        }
+      }
+      int num = check[0];
+      for (int i = 1; i < userinput; i++) {
+        if (check[i] >= num)
+          num = check[i];
+      }
+      for (int i = 0; i < userinput; i++) {
+        if (check[i] == num)
+          System.out.println(values[i]);
+      }
+    }
   }
 }
