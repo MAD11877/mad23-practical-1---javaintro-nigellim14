@@ -4,9 +4,9 @@ public class Question4
   public static void main(String[] args)
   {
      Scanner in = new Scanner(System.in);
-     int n=in.nextInt();
+     int row = in.nextInt();
         int a, b;
-        for(a = n; a <= n; a--) {
+        for(a = row-1; a >= 0; a--) {
             for(b = 0; b <= a; b++) {
                 System.out.print("*");
             }
@@ -14,4 +14,3 @@ public class Question4
         }
   }
 }
-
