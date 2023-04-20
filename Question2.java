@@ -10,7 +10,7 @@ public class Question2
     
    double weight= sc.nextDouble();
 
-   double bmi = (100 * 100 * weight) / (height * height);  
+   double bmi = (weight) / (height * height);  
    System.out.println(bmi);  
   }
 }
