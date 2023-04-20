@@ -4,7 +4,7 @@ public class Question4
   public static void main(String[] args)
   {
      Scanner in = new Scanner(System.in);
-        int n=in.nextInt();
+     int n=in.nextInt();
         int a, b;
         for(a = n; a <= n; a--) {
             for(b = 0; b <= a; b++) {
@@ -12,6 +12,7 @@ public class Question4
             }
             System.out.println();
         }
+    in.close
   }
 }
 
